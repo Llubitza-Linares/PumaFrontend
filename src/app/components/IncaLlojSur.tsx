@@ -1,9 +1,8 @@
 //import styles from './page.module.css'
 import Typography from '@mui/material/Typography';
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { cardData } from '../../data/card';
 
 
@@ -19,38 +18,37 @@ export default function Incallojeta2() {
         <main 
         // className={styles.main} 
         style={containerStyle}>
-    <h1>Ruta Incallojeta Norte</h1>
+    <h1>Ruta Incallojeta Sur</h1>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      height="45vh" 
+    >
+    <img src="/ruta2.png"
+              alt="ruta2"
+              width={520}
+              height={160}
+              />
+    <img src="/ruta2_1.png"
+              alt="ruta2.1"
+              width={520}
+              height={160}
+              />
+              </Box>
           {/* <div 
           // className={styles.center}
           >
-            <Image
-           
-              src="/ruta1.png"
-              alt="ruta1"
-              width={520}
-              height={160}
-              priority
-            />
-            <Image
-           src="/ruta1_1.png"
-           alt="ruta1.1"
-           width={520}
-           height={160}
-           priority
-         />
           </div> */}
           <Grid container spacing={2}>
           {cardData.map(card => (
             <Grid item xs={12} sm={6} md={4} key={card.id}>
               <Card >
-              {/* <Image
-            src="/pumita.png"
-            alt="puma logo"
-            width={90}
-            height={70}
-            priority
-          />
-           */}
+              <img src="/pumita.png"
+              alt="puma logo"
+              width={90}
+              height={70}
+              />
                 <CardContent>
                   <Typography variant="h5" component="h2" style={textStyle}>
                     {card.title}

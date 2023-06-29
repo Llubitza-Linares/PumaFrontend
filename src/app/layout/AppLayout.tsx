@@ -25,6 +25,7 @@ const listMenu = [
   { name: "Irpavi II Norte", icon: <DirectionsBusIcon />, to: "irpaviNorte" },
   { name: "Irpavi II Sur", icon: <DirectionsBusIcon />, to: "irpaviSur" },
   { name: "La Portada", icon: <DirectionsBusIcon />, to: "laPortada" },
+  { name: "Buscar", icon: <DirectionsBusIcon />, to: "form" },
 ];
 
 export default function TemporaryDrawer() {
@@ -74,11 +75,10 @@ export default function TemporaryDrawer() {
         {list()}
       </Drawer>
       <main>
-        <Grid sx={{ m: 10 }} >
+        <Grid sx={{ m:10}} >
           <Outlet/>
         </Grid>
       </main>
-     
     </div>
   );
 }
