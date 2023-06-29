@@ -13,6 +13,8 @@ import CajaFerroviaria from "../components/CajaFerroviaria";
 import IrpaviNorte from "../components/IrpaviNorte";
 import IrpaviSur from "../components/IrpaviSur";
 import LaPortada from "../components/LaPortada";
+import HomePage from "../pages/HomePage";
+import FormsPage from "../pages/FormsPage";
 // import MiComponente from "../components/Form";
 // import MiFormulario from "../components/Form";
 // import BuscarElementos from "../components/Form";
@@ -25,7 +27,8 @@ export const AppRoutes = () => {
     <TemporaryDrawer
     />}>
     <Route path="" >
-       
+    <Route 
+      path="/" element={<HomePage/>} /> 
       <Route 
       path="incaNorte" element={<Incallojeta1/>} /> 
        <Route 
@@ -47,8 +50,8 @@ export const AppRoutes = () => {
       <Route 
       path="laPortada" element={<LaPortada/>} />  
       </Route>
-      {/* <Route 
-      path="form" element={<BuscarElementos/>} />   */}
+      <Route  
+      path="forms" element={<FormsPage/>} />   
       
       </Route>
       

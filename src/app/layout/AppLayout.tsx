@@ -14,7 +14,7 @@ import NavBar from "./NavBar";
 
 
 const listMenu = [
-  { name: "Home", icon: <ShoppingCartIcon/>, to: "home" },
+  { name: "Home", icon: <ShoppingCartIcon/>, to: "/" },
   { name: "Inca Llojeta Norte", icon: <DirectionsBusIcon />, to: "incaNorte" },
   { name: "Inca Llojeta Sur", icon: <DirectionsBusIcon />, to: "incaSur" },
   { name: "Chasquipampa", icon: <DirectionsBusIcon />, to: "chasquipampa" },
@@ -25,7 +25,7 @@ const listMenu = [
   { name: "Irpavi II Norte", icon: <DirectionsBusIcon />, to: "irpaviNorte" },
   { name: "Irpavi II Sur", icon: <DirectionsBusIcon />, to: "irpaviSur" },
   { name: "La Portada", icon: <DirectionsBusIcon />, to: "laPortada" },
-  { name: "Buscar", icon: <DirectionsBusIcon />, to: "form" },
+  { name: "Buscar", icon: <DirectionsBusIcon />, to: "forms" },
 ];
 
 export default function TemporaryDrawer() {
