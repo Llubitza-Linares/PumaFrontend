@@ -9,9 +9,6 @@ function App() {
 
   return (
     <StoreProvider>
-    
-
-
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>

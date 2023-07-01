@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Box, Grid } from '@mui/material';
 import { cardData, cardData2 } from '../../data/card';
+import TransitionAlerts from './TransitionAlerts';
 
 
 export default function IrpaviSur() {
@@ -19,6 +20,7 @@ export default function IrpaviSur() {
         // className={styles.main} 
         style={containerStyle}>
     <h1>Ruta Irpavi II Sur</h1>
+    <TransitionAlerts />
     <Box
       display="flex"
       justifyContent="center"

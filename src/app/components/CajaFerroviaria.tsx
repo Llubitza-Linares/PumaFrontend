@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Box, Grid } from '@mui/material';
 import { cardData } from '../../data/card';
+import TransitionAlerts from './TransitionAlerts';
 
 
 export default function CajaFerroviaria() {
@@ -19,6 +20,7 @@ export default function CajaFerroviaria() {
         // className={styles.main} 
         style={containerStyle}>
     <h1>Ruta Caja Ferroviaria</h1>
+    <TransitionAlerts />
     <Box
       display="flex"
       justifyContent="center"

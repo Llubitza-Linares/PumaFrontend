@@ -5,6 +5,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Box, Grid } from '@mui/material';
 import { cardData } from '../../data/card';
+import TransitionAlerts from './TransitionAlerts';
 
 
 export default function Incallojeta1() {
@@ -20,6 +21,7 @@ export default function Incallojeta1() {
         // className={styles.main} 
         style={containerStyle}>
     <h1>Ruta Incallojeta Norte</h1>
+    <TransitionAlerts />
     <Box
       display="flex"
       justifyContent="center"

@@ -1,5 +1,7 @@
-import React from 'react';
+
 import { useForm } from 'react-hook-form';
+import { Datos } from './DatosPage';
+
 
 const FormsPage = () => {
   const { register, handleSubmit } = useForm();
@@ -9,6 +11,8 @@ const FormsPage = () => {
   };
 
   return (
+
+    
     <div
       style={{
         backgroundColor: 'orange',
@@ -23,6 +27,7 @@ const FormsPage = () => {
       }}
     >
       <h2>Buscar Rutas y Horarios</h2>
+      <Datos/>
       <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
         <div style={{ marginBottom: '10px' }}>
           <label>Origen:</label>
@@ -47,6 +52,7 @@ const FormsPage = () => {
         <button type="submit" style={{ width: '100%' }}>Buscar</button>
       </form>
     </div>
+    
   );
 };
 

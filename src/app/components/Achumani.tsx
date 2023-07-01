@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Box, Grid } from '@mui/material';
 import { cardData, cardData2 } from '../../data/card';
+import TransitionAlerts from './TransitionAlerts';
 
 
 export default function Achumani() {
@@ -20,6 +21,7 @@ export default function Achumani() {
         // className={styles.main} 
         style={containerStyle}>
     <h1>Ruta Achumani</h1>
+    <TransitionAlerts />
     <Box
       display="flex"
       justifyContent="center"
