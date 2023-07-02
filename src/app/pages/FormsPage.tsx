@@ -1,18 +1,16 @@
-
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Datos } from './DatosPage';
 
 
-const FormsPage = () => {
+const FormsPage: React.FC = () => {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log(data); // Puedes hacer lo que necesites con los datos del formulario aquí
   };
 
   return (
-
-    
     <div
       style={{
         backgroundColor: 'orange',
@@ -27,7 +25,6 @@ const FormsPage = () => {
       }}
     >
       <h2>Buscar Rutas y Horarios</h2>
-      <Datos/>
       <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
         <div style={{ marginBottom: '10px' }}>
           <label>Origen:</label>
@@ -49,10 +46,12 @@ const FormsPage = () => {
           <input type="time" {...register('hora')} />
         </div>
 
-        <button type="submit" style={{ width: '100%' }}>Buscar</button>
+        <button type="submit" style={{ width: '100%' }}>
+          Buscar
+        </button>
       </form>
+      <Datos />
     </div>
-    
   );
 };
 

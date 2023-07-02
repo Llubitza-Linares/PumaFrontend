@@ -11,7 +11,7 @@ export default function TransitionAlerts() {
   const [estimatedTime, setEstimatedTime] = React.useState(0);
 
   const generateRandomTime = () => {
-    const randomTime = Math.floor(Math.random() * 5) + 1;
+    const randomTime = Math.floor(Math.random() * 4) + 2;
     setEstimatedTime(randomTime);
     localStorage.setItem('estimatedTime', randomTime.toString());
   };
@@ -30,6 +30,8 @@ export default function TransitionAlerts() {
       if (estimatedTime > 0) {
         setEstimatedTime(prevTime => prevTime - 1);
         localStorage.setItem('estimatedTime', (estimatedTime - 1).toString());
+      } else {
+        generateRandomTime();
       }
     }, 30000);
 
